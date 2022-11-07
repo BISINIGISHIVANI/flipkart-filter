@@ -2,7 +2,7 @@ export const FilterByPriceRange=({maxPrice,filterDispatch})=>{
     return <div className="mg-sm-up">
     <div className="row flex-center filter-category">
         <p >PRICE</p>
-       <span>CLEAR</span>
+       <span onClick={()=>filterDispatch({type:"PRICE_RANGE",payload:10000})}>CLEAR</span>
     </div>
     <div className="column gap">
         <input type="range"

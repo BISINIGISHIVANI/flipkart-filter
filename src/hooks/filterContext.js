@@ -4,8 +4,10 @@ const initialState={
     sortByPrice:"",
     idealForMen:false,
     idealForWomen:false,
+    idealForBoth:false,
     brandSmiling:false,
     brandPeace:false,
+    brandKind:false,
     sizeSmall:false,
     sizeMedium:false,
     sizeLarge:false,
@@ -20,4 +22,4 @@ const FilterProvider=({children})=>{
     </FilterContext.Provider>
 }
 const useFilter=()=>useContext(FilterContext)
-export {useFilter,FilterProvider}
+export {useFilter,FilterProvider,initialState}

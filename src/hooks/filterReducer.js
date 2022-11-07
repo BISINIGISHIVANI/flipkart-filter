@@ -1,3 +1,5 @@
+import { initialState } from "./filterContext"
+
 export const FilterReducer=(state,action)=>{
     switch(action.type){
         case "SORT_BY_PRICE":
@@ -20,6 +22,18 @@ export const FilterReducer=(state,action)=>{
                 ...state,
                 idealForWomen:!action.payload
             }
+        case "IDEAL_FOR_MEN_WOMEN":
+            return {
+                ...state,
+                idealForBoth:!action.payload
+            }
+        case "CLEAR_GENDER":
+            return {
+                ...state,
+                idealForMen:false,
+                idealForWomen:false,
+                idealForBoth:false
+            }
         case "PRICE_RANGE":
             return {
                 ...state,
@@ -35,6 +49,11 @@ export const FilterReducer=(state,action)=>{
                 ...state,
                 brandSmiling:!action.payload
             }
+        case "BRAND_KIND":
+                return {
+                    ...state,
+                    brandKind:!action.payload
+                }
         case "SIZE_MEDIUM":
             return {
                 ...state,
@@ -54,6 +73,11 @@ export const FilterReducer=(state,action)=>{
             return {
                 ...state,
                 sizeXLarge:!action.payload
+            }
+        case "CLEAR_ALL":
+            return {
+                ...state,
+                ...initialState
             }
         default:
             return state

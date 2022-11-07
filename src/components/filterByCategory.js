@@ -1,8 +1,9 @@
-export const FilterByCategory=({filterDispatch,idealForMen,idealForWomen})=>{
+export const FilterByCategory=({filterDispatch,idealForMen,idealForWomen,idealForBoth})=>{
     return <div className="column gap">
     <div className="row flex-center filter-category">
         <p className="mg-sm-up">GENDER</p>
-        <span>CLEAR</span>
+        <span onClick={()=>filterDispatch({type:"CLEAR_GENDER"})}
+          >CLEAR</span>
     </div>
    <div className="column gap ">
     <label>
@@ -24,7 +25,7 @@ export const FilterByCategory=({filterDispatch,idealForMen,idealForWomen})=>{
       <label>
         <input type="checkbox"
         checked={idealForWomen}
-        onChange={(e)=>e.target.checked?
+        onChange={(e)=>e.target.checked ?
             filterDispatch({
             type:"IDEAL_FOR_WOMEN",
             payload:false
@@ -36,7 +37,18 @@ export const FilterByCategory=({filterDispatch,idealForMen,idealForWomen})=>{
        Women
       </label>
       <label>
-        <input type="checkbox"/>
+        <input type="checkbox"
+        checked={idealForBoth}
+        onChange={(e)=>e.target.checked?
+            filterDispatch({
+            type:"IDEAL_FOR_MEN_WOMEN",
+            payload:false
+        }): filterDispatch({
+            type:"IDEAL_FOR_MEN_WOMEN",
+            payload:true
+        })
+    }
+        />
        Men & Women
       </label>
    </div>

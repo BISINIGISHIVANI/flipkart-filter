@@ -9,21 +9,21 @@ import { Navabar } from "../components/navabar";
 export const FilterPage=()=>{
     const [products]=useState(ProductsData)
     const {filterState,filterDispatch}=useFilter();
-    const {sortByPrice,idealForMen,idealForWomen,maxPrice,brandPeace,brandSmiling,
+    const {sortByPrice,idealForMen,idealForWomen,idealForBoth,maxPrice,brandPeace,brandSmiling,
         sizeSmall,sizeMedium,sizeLarge,sizeXLarge
     }=filterState;
     const productFilterByPrice=SortByPriceHandler(products,sortByPrice);
-    const productByCategory=SortByCategoryHandler(productFilterByPrice,idealForMen,idealForWomen)
+    const productByCategory=SortByCategoryHandler(productFilterByPrice,idealForMen,idealForWomen,idealForBoth)
     const productByPriceRange=SortByPriceRangeHandler(productByCategory,maxPrice)
     const productFilterByBrand=SortByBrandHandler(productByPriceRange,brandPeace,brandSmiling)
     const productFilteBySize=SortBySizeHandler(productFilterByBrand,sizeSmall,sizeMedium,sizeLarge,sizeXLarge);
     const filterData =[...new Set(productFilteBySize)]
     return <div>
         <Navabar/>
-<div className="row gap bg-gray">
+        <div className="row gap bg-gray">
         {/* filterBar */}
         <ProductFilterBar/>
-        <main className="border-sm main-container mg-sm">
+        <main className="border-sm main-container mg-sm"  style={{width:"70vw"}}>
             <p className="mg-sm padding-sm">Clothing and Accessories</p>
             {/* filter price */}
             <FilterByPrice sortByPrice={sortByPrice} filterDispatch={filterDispatch}/>
@@ -39,10 +39,10 @@ export const FilterPage=()=>{
                     <h5 className="mg-sm">Sizes : 
                        <span>{size.toString()}</span>
                     </h5>
-                    <p>{idealFor}</p>
+                    <p>{idealFor.toString()}</p>
                 </div>
             </div>):
-             <h2 className="row flex-center full-width">No product found based on your filters</h2>
+             <h2 className="row flex-center align-center mg-sm-up full-width" style={{width:"70vw"}}>No product found based on your filters</h2>
                 }
             </div>
         </main>

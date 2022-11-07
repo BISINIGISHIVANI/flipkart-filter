@@ -8,25 +8,27 @@ const SortByPriceHandler=(data,sortByPrice)=>{
     return data
 }
 
-const SortByCategoryHandler=(data,idealForMen,idealForWomen)=>{
-    if(idealForMen===false && idealForWomen===false){
+const SortByCategoryHandler=(data,idealForMen,idealForWomen,idealForBoth)=>{
+    if(idealForMen===false && idealForWomen===false &&idealForBoth===false){
       return data
     }
    {
-      let a=  data.filter((product)=>idealForMen ? product.idealFor.includes("Men")?true:false:false)
-      let b=data.filter((product)=>idealForWomen ? product.idealFor.includes("Women")?true:false:false)
-      return [...a,...b]
+      let a=data.filter((product)=>idealForMen ? product.idealFor.includes("Men")?true:false:false)
+      let b=data.filter((product)=>idealForWomen ? product.idealFor.includes("Women") ? true:false:false)
+      let c=data.filter((product)=>idealForBoth ? product.idealFor.includes("Women") && product.idealFor.includes("Men")? true:false:false)
+      return [...a,...b,...c]
     }
 }
 
-const SortByBrandHandler=(data,brandPeace,brandSmiling)=>{
+const SortByBrandHandler=(data,brandPeace,brandSmiling,brandKind)=>{
   if(brandSmiling ===false && brandPeace===false){
     return data
   }
   {
     let data1=data.filter((product)=>brandSmiling?product.brand==="Smile":false)
     let data2=data.filter((product)=>brandPeace?product.brand==="Peace":false)
-    return [...data1,...data2]
+    let data3=data.fillter((product)=>brandKind?product.brand==="Kind":false)
+    return [...data1,...data2,...data3]
   }
 }
 const SortByPriceRangeHandler=(data,maxPrice)=>{
