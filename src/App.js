@@ -1,10 +1,12 @@
 import './App.css';
-import { FilterPage } from './pages/filterPage';
+import { CartPage } from './pages/cartPage';
+// import { ProductListingPage } from './pages/productListing';
 
 function App() {
   return (
     <div>
-      <FilterPage/>
+      {/* <ProductListingPage/> */}
+      <CartPage/>
     </div>
   );
 }

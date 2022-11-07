@@ -1,0 +1,57 @@
+[
+    {
+        "id":"11",
+        "name":"Full Sleeve Solid Men",
+         "price":"5099",
+        "idealFor":["Men"],
+        "image":"https://rukminim1.flixcart.com/image/495/594/xif0q/jacket/1/r/5/xl-1-no-52241501-puma-original-imaghxk9kbptdhgn.jpeg?q=50",
+        "brand":"PUMA",
+        "size":["S","M","XL"]
+     },
+     {
+        "id":"12",
+        "name":"ESS Small Logo FZ",
+         "price":"2088",
+        "idealFor":["Men"],
+        "image":"https://rukminim1.flixcart.com/image/495/594/krp94sw0/jacket/a/p/2/m-58670201-puma-original-imag5fnqftgvqsz2.jpeg?q=50",
+        "brand":"PUMA",
+        "size":["M","XL"]
+     },
+     {
+        "id":"13",
+        "name":"Full Sleeve Washed",
+         "price":"599",
+        "idealFor":["Men"],
+        "image":"https://rukminim1.flixcart.com/image/495/594/xif0q/jacket/a/h/i/xl-mnt-7025-montrez-original-imag5hb93udpfs4q-bb.jpeg?q=50",
+        "brand":"MONTREZ",
+        "size":["XL"]
+     },
+     {
+        "id":"14",
+        "name":"Full sleeve Solid men",
+         "price":"1999",
+        "idealFor":["Men"],
+        "image":"https://rukminim1.flixcart.com/image/495/594/k0zlsi80/jacket/4/h/w/xl-mens-jkt-009-black-candy-house-original-imafg4hz8kr6njd9.jpeg?q=50",
+        "brand":"CHRISTY WORLD",
+        "size":["S","XL"]
+     },
+     {
+        "id":"15",
+        "name":"Slub Jacket Full Sleeve",
+         "price":"3819",
+        "idealFor":["Men"],
+        "image":"https://rukminim1.flixcart.com/image/495/594/xif0q/jacket/s/i/e/m-1-no-672932-puma-original-imaghu4myjxwfvsy.jpeg?q=50",
+        "brand":"PUMA",
+        "size":["S","M"]
+     },
+     {
+        "id":"16",
+        "name":"Full Sleeve Solid Men",
+         "price":"1299",
+        "idealFor":["Men"],
+        "image":"https://rukminim1.flixcart.com/image/495/594/xif0q/jacket/b/b/x/m-1-no-211bay-breil-by-fort-collins-original-imaghb4mnwm4hxmn.jpeg?q=50",
+        "brand":"Breil By Fort Collins",
+        "size":["S"]
+     }
+     
+]
