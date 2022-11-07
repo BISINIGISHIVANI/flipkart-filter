@@ -1,0 +1,32 @@
+[
+    {
+       "id":"2",
+       "name":"kaal",
+       "price":"400",
+       "idealFor":["Men","Women"],
+       "brand":"Smile"
+    },
+    {
+       "id":"5",
+       "name":"kaal",
+       "price":"400",
+       "idealFor":["Men"],
+       "image":"../assets/shirt2.webp",
+        "brand":"Smile"
+    },
+    {
+        "id":"3",
+        "name":"chasma",
+        "price":"200",
+       "idealFor":["Women"],
+       "brand":"Peace"
+    },
+    {
+       " id":"4",
+       " name":"yav",
+        "price":"800",
+       " idealFor":["Women"],
+       " brand":"Peace"
+    }
+
+]
