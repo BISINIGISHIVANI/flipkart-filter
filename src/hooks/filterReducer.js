@@ -49,11 +49,6 @@ export const FilterReducer=(state,action)=>{
                 ...state,
                 brandSmiling:!action.payload
             }
-        case "BRAND_KIND":
-                return {
-                    ...state,
-                    brandKind:!action.payload
-                }
         case "SIZE_MEDIUM":
             return {
                 ...state,

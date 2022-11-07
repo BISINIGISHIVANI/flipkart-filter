@@ -1,5 +1,5 @@
 
-const FilterByBrand=({filterDispatch,brandSmiling,brandPeace,brandKind})=>{
+const FilterByBrand=({filterDispatch,brandSmiling,brandPeace})=>{
     // const brandData=["smile","longer","peace"]
     // const [brands,setBrand]=useState(brandData);
     // const searchBrandHandler=(value)=>{
@@ -34,19 +34,7 @@ const FilterByBrand=({filterDispatch,brandSmiling,brandPeace,brandKind})=>{
     />
     Peace
   </label>
-  <label>
-    <input type="checkbox"
-    checked={brandKind}
-    onChange={(e)=>e.target.checked?filterDispatch({
-        type:"BRAND_KIND",
-        payload:false
-    }):filterDispatch({
-        type:"BRAND_KIND",
-        payload:true
-    })}
-    />
-    Kind
-  </label>
+  
 </div>
 }
 export {FilterByBrand}

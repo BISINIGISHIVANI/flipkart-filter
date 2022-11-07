@@ -7,7 +7,6 @@ const initialState={
     idealForBoth:false,
     brandSmiling:false,
     brandPeace:false,
-    brandKind:false,
     sizeSmall:false,
     sizeMedium:false,
     sizeLarge:false,

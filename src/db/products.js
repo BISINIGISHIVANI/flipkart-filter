@@ -44,7 +44,7 @@ export const ProductsData=[
         name:"yav",
         price:900,
         idealFor:["Women"],
-        brand:"Peace",
+        brand:"Smile",
         size:["M","XL"],
         image:tshirt
     }

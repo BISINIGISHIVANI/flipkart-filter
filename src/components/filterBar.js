@@ -6,7 +6,7 @@ import { FilterBySize } from "./filterBySize";
 
 const ProductFilterBar=()=>{
     const {filterState,filterDispatch}=useFilter();
-    const {idealForMen,idealForWomen,idealForBoth,brandSmiling,brandPeace,brandKind,maxPrice,
+    const {idealForMen,idealForWomen,idealForBoth,brandSmiling,brandPeace,maxPrice,
         sizeSmall,sizeMedium,sizeLarge,sizeXLarge
     }=filterState;
     return <aside className="container mg-sm border-sm column pointer">
@@ -27,7 +27,7 @@ const ProductFilterBar=()=>{
     <FilterBySize sizeLarge={sizeLarge} sizeMedium={sizeMedium} sizeSmall={sizeSmall} sizeXLarge={sizeXLarge} filterDispatch={filterDispatch}/>
     <span className="border-bottom-sm"></span>
     {/* brand */}
-    <FilterByBrand brandKind={brandKind} brandSmiling={brandSmiling}brandPeace={brandPeace} filterDispatch={filterDispatch}/>
+    <FilterByBrand brandSmiling={brandSmiling} brandPeace={brandPeace}  filterDispatch={filterDispatch}/>
 </aside>
 }
 export {ProductFilterBar}

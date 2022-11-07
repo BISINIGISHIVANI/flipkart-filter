@@ -9,8 +9,7 @@ import { Navabar } from "../components/navabar";
 export const FilterPage=()=>{
     const [products]=useState(ProductsData)
     const {filterState,filterDispatch}=useFilter();
-    const {sortByPrice,idealForMen,idealForWomen,idealForBoth,maxPrice,brandPeace,brandSmiling,
-        sizeSmall,sizeMedium,sizeLarge,sizeXLarge
+    const {sortByPrice,idealForMen,idealForWomen,idealForBoth,maxPrice,brandPeace,brandSmiling,sizeSmall,sizeMedium,sizeLarge,sizeXLarge
     }=filterState;
     const productFilterByPrice=SortByPriceHandler(products,sortByPrice);
     const productByCategory=SortByCategoryHandler(productFilterByPrice,idealForMen,idealForWomen,idealForBoth)

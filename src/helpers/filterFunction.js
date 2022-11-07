@@ -20,15 +20,14 @@ const SortByCategoryHandler=(data,idealForMen,idealForWomen,idealForBoth)=>{
     }
 }
 
-const SortByBrandHandler=(data,brandPeace,brandSmiling,brandKind)=>{
-  if(brandSmiling ===false && brandPeace===false){
+const SortByBrandHandler=(data,brandPeace,brandSmiling)=>{
+  if(brandSmiling ===false && brandPeace===false ){
     return data
   }
   {
     let data1=data.filter((product)=>brandSmiling?product.brand==="Smile":false)
     let data2=data.filter((product)=>brandPeace?product.brand==="Peace":false)
-    let data3=data.fillter((product)=>brandKind?product.brand==="Kind":false)
-    return [...data1,...data2,...data3]
+    return [...data1,...data2]
   }
 }
 const SortByPriceRangeHandler=(data,maxPrice)=>{
