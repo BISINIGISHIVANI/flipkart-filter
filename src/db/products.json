@@ -1,31 +1,57 @@
 [
     {
        "id":"2",
-       "name":"kaal",
-       "price":"400",
+       "name":"Graphic Print Men",
+       "price":"269",
        "idealFor":["Men","Women"],
-       "brand":"Smile"
+       "brand":"Smile",
+       "image":"https://rukminim1.flixcart.com/image/495/594/xif0q/t-shirt/x/j/5/xs-bwtrnful-z55-blive-original-imaggvyuc8emdn9g.jpeg?q=50",
+       "size":["S","M"]
     },
     {
        "id":"5",
-       "name":"kaal",
-       "price":"400",
+       "name":"Men Self Ankle length",
+       "price":"700",
        "idealFor":["Men"],
-        "brand":"Smile"
+        "brand":"Smile",
+        "image":"https://rukminim1.flixcart.com/image/495/594/xif0q/sock/h/v/j/free-3-bl-ankle-bollar-original-imagjjchge8r4rhx.jpeg?q=50",
+        "size":["L"]
     },
     {
         "id":"3",
-        "name":"chasma",
-        "price":"200",
+        "name":"Muffler drage",
+        "price":"589",
        "idealFor":["Women"],
-       "brand":"Peace"
+       "image":"https://rukminim1.flixcart.com/image/495/594/kwfaj680/muffler/c/k/s/free-fleece-blue-muffler-draaz-impex-original-imag93trqmfjepam.jpeg?q=50",
+       "brand":"Peace",
+       "size":["L"]
     },
     {
-       " id":"4",
-       " name":"yav",
+       "id":"4",
+       "name":"Metronaut shirt",
         "price":"800",
-       " idealFor":["Women"],
-       " brand":"Peace"
-    }
+       "idealFor":["Men"],
+       "image":"https://rukminim1.flixcart.com/image/495/594/l1xwqkw0/shirt/z/w/e/m-mss22eppcsh055b-metronaut-original-imagdebuhkv2wedg.jpeg?q=50",
+       "brand":"Peace",
+       "size":["S","M","XL"]
+    },
+    {
+      "id":"1",
+      "name":"Eye blogger",
+       "price":"1200",
+      "idealFor":["Men"],
+      "image":"https://rukminim1.flixcart.com/image/495/594/kkfrjww0/t-shirt/h/1/t/l-t312-cgblwh-new-eyebogler-original-imafzs5hrjgzsfpr.jpeg?q=50",
+      "brand":"Smile",
+      "size":["S","XL"]
+   },
+   {
+      "id":"6",
+      "name":"Eye blogger yellow",
+       "price":"2500",
+      "idealFor":["Men"],
+      "image":"https://rukminim1.flixcart.com/image/495/594/l12h1u80/t-shirt/d/d/t/l-dv24solidmustard-diversify-original-imagcpzzrks39hyd.jpeg?q=50",
+      "brand":"Peace",
+      "size":["M","XL"]
+   }
 
 ]

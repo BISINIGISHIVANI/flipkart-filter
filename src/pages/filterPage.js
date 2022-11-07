@@ -1,5 +1,5 @@
-import { ProductsData } from "../db/products";
-// import productsData from "../db/products.json"
+// import { ProductsData } from "../db/products";
+import productsData from "../db/products.json"
 import {useState} from "react"
 import { useFilter } from "../hooks/filterContext";
 import { ProductFilterBar } from "../components/filterBar";
@@ -7,7 +7,7 @@ import { SortByBrandHandler, SortByCategoryHandler, SortByPriceHandler, SortByPr
 import { FilterByPrice } from "../components/filteByPrice";
 import { Navabar } from "../components/navabar";
 export const FilterPage=()=>{
-    const [products]=useState(ProductsData)
+    const [products]=useState(productsData)
     const {filterState,filterDispatch}=useFilter();
     const {sortByPrice,idealForMen,idealForWomen,idealForBoth,maxPrice,brandPeace,brandSmiling,sizeSmall,sizeMedium,sizeLarge,sizeXLarge
     }=filterState;
